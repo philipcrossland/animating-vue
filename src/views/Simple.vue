@@ -6,7 +6,6 @@
 
 <script>
 import gsap from 'gsap'
-
 export default {
   methods: {
     beforeEnter(el) {
@@ -18,7 +17,7 @@ export default {
         duration: 1,
         opacity: 1,
         scale: 1,
-        ease: 'bounce.out',
+        ease: 'bounce.inOut',
         onComplete: done
       })
     }
