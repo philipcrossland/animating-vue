@@ -23,7 +23,6 @@
 
 <script>
 import Velocity from 'velocity-animate'
-
 export default {
   data() {
     return {
@@ -39,7 +38,7 @@ export default {
       Velocity(
         el,
         { opacity: 1, width: '12em' },
-        { duration: 1000, easing: [70, 8], complete: done }
+        { duration: 1000, easing: [100, 5], complete: done }
       )
     },
     leave(el, done) {
@@ -64,13 +63,14 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 12em;
   height: 20em;
+  width: 12em;
   border-radius: 1%;
   background-color: #e0e0e0;
   box-shadow: 0.08em 0.03em 0.4em #ababab;
   padding-top: 0.7em;
 }
+
 .drawer div {
   height: 3.5em;
   width: 95%;

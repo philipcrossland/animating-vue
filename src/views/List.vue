@@ -1,6 +1,6 @@
 <template>
   <div>
-    <input v-model="newContact" placeholder="Name" type="text" />
+    <input type="text" v-model="newContact" placeholder="Name" />
     <button @click="addContact">Add Contact</button>
     <button @click="sortContacts">Sort</button>
 
@@ -17,7 +17,7 @@ export default {
   data() {
     return {
       newContact: '',
-      contacts: ['Beau Thabeast', 'Cindy Rella', 'Alice Wunderlind']
+      contacts: ['Beau Thabeast', 'Cindy Rella', 'Alice Vunderlind']
     }
   },
   methods: {
@@ -31,13 +31,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-button {
-  width: unset;
-}
-
-ul li {
-  list-style: none;
-}
-</style>
