@@ -5,7 +5,7 @@
     <button @click="sortContacts">Sort</button>
 
     <transition-group name="slide-up" tag="ul" appear>
-      <li v-for="(contact, index) in contacts" :key="index">
+      <li v-for="contact in contacts" :key="contact">
         {{ contact }}
       </li>
     </transition-group>
